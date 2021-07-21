@@ -1,0 +1,20 @@
+Ketika melakukan konversi dari Fahrenheit (K) ke Kelvin (K), maka lakukan konversi terlebih dahulu ke Reamur (R) atau Celcius (C).
+Sebagai contoh: ingin melakukan konversi dari (F) ke (K), maka lakukan konversi terlebih dahulu dari (F) ke (C), kemudian ke (K).
+Berikut contoh code sederhananya menggunakan bahasa pemrograman PYTHON:
+
+(tinggal copy paste saja ke IDE python anda, code dimulai dari baris kedua setelah baris ini)
+''' Program Konversi F ==> K dan K ==> F'''
+# F = Fahrenheit
+# K = Kelvin
+
+#KONVERSI F ==> K
+F = float (input("Masukkan Suhu dalam (F) = "))
+print ("=> Data Suhu Berhasil Diinput: Suhu (F) = ", F, " F")
+K = ((5/4)*(4/9)*(F-32))+273
+print ("Konversi Suhu dari F ke K = ", K, " K")
+
+#KONVERSI K ==> F
+K1 = float (input ("Masukkan Suhu dalam (K) = "))
+print ("=> Data Suhu Berhasil Diinput: Suhu (K) = ", K1, " K")
+F1 = ((9/4)*(4/5)*(K1-273))+32
+print ("Konversi Suhu dari K ke F = ", F1, " F")
